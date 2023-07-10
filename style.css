@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* // Layout // */
+
+header{
+    position: relative;
+    display: flex;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    height: 25vh;
+    border-bottom: 3px solid white;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.left .subhead{
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.left .range{
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.right{
+    background-color: rgb(31, 29, 29);
+    
+    border: 12px solid rgb(0, 104, 28);
+    border-radius: 0.5rem;
+    
+    font-size: 8rem;
+    width: 20rem;
+    height: 15rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.low{
+    color: rgb(38, 37, 37);
+    font-size: 2rem;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.high{
+    color: rgb(38, 37, 37);
+    font-size: 3rem;
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.uservalue{
+    background-color: rgb(31, 29, 29);
+    border: 2px solid rgb(70, 68, 68);
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 6rem;
+    width: 20rem;
+    height: 15rem;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.win::before{
+    color: #f3a333;
+    font-size: 8rem;
+    font-family: inherit;
+    content: 'Win!';
+    position: absolute;
+    top: 150%;
+    right: 110%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    height: 15rem;
+}
+
+.check{
+    position: absolute;
+    bottom: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.highlights{
+    color: rgb(163, 144, 69);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.again{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    border-radius: 0.5rem;
+    background-color: #eee;
+    color: #222;
+    font-size: 2rem;
+    height: 7rem;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+      background-color: #b9f8f6;
+  }
+
+  .hide{
+        display: none;
+  }
+
+  .light{
+      color: rgb(3, 177, 49);
+  }
+
+  .dark{
+      color: rgb(1, 61, 17);
+  }
+
+  highlow{
+    color: rgb(238, 30, 127);
+  }
+
+
+/* // Media Queries // */
+
+@media(max-width: 900px){
+    
+    .left{
+        gap: 5vw;
+    }
+    
+    .left .subhead{
+        font-size: 3.5vw;
+    }
+    
+    .left .range{
+        font-size: 1.8vw;    
+    }
+    
+    .right{
+        border: 1.8vw solid rgb(0, 104, 28);
+        border-radius: 0.5vw;
+        font-size: 8vw;
+        width: 22vw;
+        height: 18vw;
+        }
+    
+    .low{
+        font-size: 1.8vw;
+        left: 26%;
+        }
+    
+    .high{
+        font-size: 2.3vw;
+        left: 78%;
+        }
+    
+    .uservalue{
+        border: 0.4vw solid rgb(70, 68, 68);
+        border-radius: 0.5vw;
+        font-size: 8vw;
+        width: 22vw;
+        height: 16vw;
+        }
+    
+    /* .win::before{
+        font-size: 8rem;
+        width: 20rem;
+        height: 15rem;
+    } */
+
+    .highlights{
+        gap: 4vw;
+        font-size: 3vw;
+        }
+    
+    .btn {
+        border-radius: 0.5vw;
+        font-size: 2vw;
+        height: 7vw;
+        padding: 1rem 2vw;
+      }
+}

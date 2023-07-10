@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-AU-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css">
     <title>Number In My Mind</title>
 </head>
 <body>
-    <section>
-        <h1>Guess the number 🐱‍👤</h1>
-        <p>👉 Between 1 and 20 👈</p>
-        <div><span>?</span></div>
-    </section>
-    <section>
-        <input type="number">
-        <button>Check</button>
-        <p><span>⬇Too Low</span><span>⬆Too High</span></p>
-    </section>
-    <section>
-        <div>
-            <p>😁 Score: </p>
-            <p>😎 Highscore: </p>
+    <header>
+        <div class="left">
+            <p class="subhead">Guess the number 🐱‍👤</p>
+            <p class="range">👉 Between 1 and 20 👈</p>
         </div>
-    </section>
-    <section>
-        <button>Play Again 🔄</button>
-    </section>
+        <div class="right">
+            <p>?</p>
+        </div>
+    </header>
+    <main>
+        <div>
+            <p><span class="low">⬇ Too Low</span></p>
+            <input type="number" class="uservalue" placeholder="10">
+            <p><span class="high">⬆ Too High</span></p>
+            <button class="btn check" >Check</button>
+        </div>
+            <div class="highlights">
+                <p class="score">😁 Score: <span class="myscore" ></span> </p>
+                <p class="highscore">😎 Highscore: <span class="myhiscore" ></span> </p>
+            </div>
+    </main>
+    <footer>
+        <button class="btn again">🔄 Play Again</button>
+    </footer>
 </body>
 </html>
