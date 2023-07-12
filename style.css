@@ -269,6 +269,7 @@ header{
         font-size: 8vw;
         width: 22vw;
         height: 16vw;
+        top: 40%;
         }
     
     /* .win::before{
@@ -280,6 +281,12 @@ header{
     .highlights{
         gap: 4vw;
         font-size: 3vw;
+        flex-direction: column;
+        }
+    
+        .highlights p{
+            display: flex;
+            justify-content: center;
         }
     
     .btn {

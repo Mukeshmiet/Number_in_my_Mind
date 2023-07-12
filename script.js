@@ -126,6 +126,7 @@
         usrval.classList.remove("hide");
         wonvar.classList.remove("win");
         lowvar.classList.remove("hide");
+        highvar.classList.remove("hide");
         checkvar.classList.remove("hide");
         rightp.textContent = "?";
         scorevar.textContent = 20;
