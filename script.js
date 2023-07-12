@@ -141,7 +141,7 @@
     const backAudio = function() {
         document.querySelector(".overlay").classList.add("hide");
         baudio.play();
-        baudio.volume = 0.3;
+        baudio.volume = 0.7;
     };
 
 
