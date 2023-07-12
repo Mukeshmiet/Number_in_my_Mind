@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-AU-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font.css">
     <title>Number In My Mind</title>
 </head>
 <body>
-    <header>
+    <audio class="baudio" src="./audios/background.mp3" loop preload="none"></audio>
+    <div class="overlay" ><button class="start-play">Start</button>
+    </div>
+        <header>
         <div class="left">
             <p class="subhead">Guess the number 🐱‍👤</p>
             <p class="range">👉 Between 1 and 20 👈</p>
@@ -21,16 +25,22 @@
         <div>
             <p><span class="low">⬇ Too Low</span></p>
             <input type="number" class="uservalue" placeholder="10">
+            <div class="won"></div>
             <p><span class="high">⬆ Too High</span></p>
             <button class="btn check" >Check</button>
         </div>
             <div class="highlights">
-                <p class="score">😁 Score: <span class="myscore" ></span> </p>
-                <p class="highscore">😎 Highscore: <span class="myhiscore" ></span> </p>
+                <p class="score">😁 Score: <span class="myscore" >20</span> </p>
+                <p class="highscore">😎 Highscore: <span class="myhiscore" >0</span> </p>
             </div>
     </main>
     <footer>
         <button class="btn again">🔄 Play Again</button>
     </footer>
+    <div class="mute">
+        <button class="all">&#128585;</button>
+        <button class="back">&#128266;</button>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
